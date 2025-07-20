@@ -1,13 +1,15 @@
 function Footer() {
   return (
     <footer style={{
-      backgroundColor: '#22223b',
-      color: '#f2e9e4',
+      borderTop: '2px solid #bfc0c0',
+      backgroundColor: '#14213d',
+      color: '#fca311',
       textAlign: 'center',
-      padding: '18px 0',
+      padding: '16px 0',
       marginTop: '30px',
       fontSize: '16px',
-      letterSpacing: '1px'
+      letterSpacing: '1px',
+      fontFamily: 'Arial, sans-serif'
     }}>
       <span>&copy; 2025 My Favorite Cities. All rights reserved.</span>
     </footer>
