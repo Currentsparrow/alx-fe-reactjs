@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import WelcomeMessage from './components/WelcomeMessage'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import UserProfile from './components/UserProfile'
-import { fetchUser } from './services/api'
 
 function Home() {
   return <h2>Welcome to GitHub User Search!</h2>
@@ -16,8 +15,6 @@ function About() {
 }
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
       <WelcomeMessage />
