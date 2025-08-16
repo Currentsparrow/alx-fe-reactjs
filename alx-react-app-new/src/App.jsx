@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import WelcomeMessage from './components/WelcomeMessage'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import { WelcomeMessage, Header, Footer } from './App'
 import UserProfile from './components/UserProfile'
 
 function Home() {
@@ -40,7 +38,6 @@ function Header() {
     </header>
   )
 }
-export default Header
 
 function Footer() {
   return (
@@ -49,12 +46,10 @@ function Footer() {
     </footer>
   )
 }
-export default Footer
 
 function WelcomeMessage() {
   return <p>Type a GitHub username to search for their profile.</p>
 }
-export default WelcomeMessage
 
 function UserProfile() {
   const { username } = useParams()
@@ -82,7 +77,6 @@ function UserProfile() {
     </div>
   )
 }
-export default UserProfile
 
 const GITHUB_API_KEY = import.meta.env.VITE_APP_GITHUB_API_KEY
 
